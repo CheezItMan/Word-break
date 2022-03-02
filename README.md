@@ -36,9 +36,4 @@ We return `True` because "applepenapple" can be segmented as "apple pen apple". 
 
 We return `False` because "catsandog" _cannot_ be segmented with the words provided in the dictionary without overlap.
 
-
-## Why Use A Priority Queue?
-
-**Question:** Why does your team thing a priority queue is appropriate here?
-
-*This exercise was taken from: [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)*
+*This exercise was taken from: [Leetcode: Word Break](https://leetcode.com/problems/word-break/)*
