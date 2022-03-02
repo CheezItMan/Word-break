@@ -1,40 +1,41 @@
-# Merge K Sorted Lists
+# Word Break
 
-You are given an array of `k` linked-lists lists, each linked-list is sorted in ascending order.
+Given a string `s` and a dictionary of strings `word_dict`, return `True` if `s` can be segmented into a space-separated sequence of one or more dictionary words.
 
-Merge all the linked-lists into one sorted linked-list and return it.
+Note that the same word in the dictionary may be reused multiple times in the segmentation.
 
 ## Example 1:
 
-**Input:** `lists = [[1,4,5],[1,3,4],[2,6]]`
+**Input:** `s = "leetcode"`, `word_dict = ["leet", "code"]`
+
+**Output:** `True`
 
 **Explanation:**
 
-The linked-lists are:
-```
-[
-  1->4->5,
-  1->3->4,
-  2->6
-]
-```
-merging them into one sorted list:
-1->1->2->3->4->4->5->6
+We return `True` because "leetcode" can be segmented as "leet code".
 
-**Output:** `[1,1,2,3,4,4,5,6]`
 
 
 ## Example 2:
 
-**Input:** `lists = []`
+**Input:** `s = "applepenapple"`, `word_dict = ["apple", "pen"]`
 
-**Output:** `[]`
+**Output:** `True`
+
+**Explanation:**
+
+We return `True` because "applepenapple" can be segmented as "apple pen apple".  Note that "apple" can be used twice.
 
 ## Example 3:
 
-**Input:** `lists = [[]]`
+**Input:** `s = "catsandog"`, `word_dict = ["cats", "dog", "sand", "and", "cat"]``
 
-**Output:** `[]`
+**Output:** `False`
+
+**Explanation:**
+
+We return `False` because "catsandog" _cannot_ be segmented with the words provided in the dictionary without overlap.
+
 
 ## Why Use A Priority Queue?
 
